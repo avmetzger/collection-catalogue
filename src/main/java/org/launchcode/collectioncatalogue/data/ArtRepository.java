@@ -1,11 +1,10 @@
 package org.launchcode.collectioncatalogue.data;
 
-import org.launchcode.collectioncatalogue.models.User;
+import org.launchcode.collectioncatalogue.models.Art;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface UserRepository extends CrudRepository <User, Integer>{
+public interface ArtRepository extends CrudRepository<Art, Integer> {
 
-    User findByUsername(String username);
 }

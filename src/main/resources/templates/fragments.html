@@ -6,24 +6,22 @@
     <title th:text="${title}">Collection Catalogue</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
     <link rel="stylesheet" th:href="@{/styles.css}">
-
 </head>
 <body>
 
-<header class="container-fluid " th:fragment="header">
+<header class="container-fluid" th:fragment="header">
     <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
             <ul class="nav">
                 <li class="nav-item"><a class="navbar-brand" href="/">Home</a></li>
                 <li class="nav-item"><a class="btn btn-default" href="/login">Sign in</a></li>
                 <li class="nav-item"><a class="btn btn-default" href="/register">Register</a></li>
+                <li class="nav-item"><a class="btn btn-default" href="/logout">Sign out</a></li>
             </ul>
-        </div>
     </nav>
-    <h1 th:text="${title}">Collection Catalogue</h1>
+    <h2 th:text="${title}">Collection Catalogue</h2>
 </header>
 
 </body>

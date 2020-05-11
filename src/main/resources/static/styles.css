@@ -1,3 +1,9 @@
 .error {
     color: red;
 }
+body {
+    background-color: #EEEEEE;
+}
+nav {
+    background-color: #DDDDDD;
+}

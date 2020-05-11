@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head th:replace="fragments :: head"></head>
+<body>
+<header th:replace="fragments :: header"></header>
+<div class="container-fluid">
+    <table class="centeredTable">
+        <tr>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Title</th>
+            <th>Artist</th>
+            <th>In My Collection</th>
+        </tr>
+
+        <tr th:each="piece : ${artworks}">
+            <td>
+                <!--                <img th:src="@{piece.photo}" width="100%">-->
+            </td>
+            <td>
+                <p th:text="${piece.nameInGame}"></p>
+            </td>
+            <td>
+                <p th:text="${piece.title}"></p>
+            </td>
+            <td>
+                <p th:text="${piece.artist}"></p>
+            </td>
+            <td>
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

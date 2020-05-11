@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org/">
 <head th:replace="fragments :: head"></head>
-<body class="container">
+<body>
 
 <header th:replace="fragments :: header"></header>
-
+<div class="container-fluid">
 <form class="form-horizontal" method="post">
     <div class="form-group">
         <label th:for="username">Username
@@ -23,6 +23,6 @@
 </form>
 
 <p>Don't have an account? <a href="/register">Register for one.</a></p>
-
+</div>
 </body>
 </html>
